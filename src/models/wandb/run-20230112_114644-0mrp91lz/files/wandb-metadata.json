@@ -1,0 +1,42 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-01-12T10:46:46.653798",
+    "startedAt": "2023-01-12T10:46:44.815004",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\usuario\\MLOps\\nuevo_repo\\src\\models\\lighting_model.py",
+    "codePath": "nuevo_repo\\src\\models\\lighting_model.py",
+    "git": {
+        "remote": "https://github.com/palomaguiral/MLOps.git",
+        "commit": "54a0de6e27dc6ed95898336392f741eb9080b441"
+    },
+    "email": "pguiort@gmail.com",
+    "root": "C:/Users/usuario/MLOps",
+    "host": "DESKTOP-LJ88EGP",
+    "username": "usuario",
+    "executable": "C:\\Users\\usuario\\anaconda3\\envs\\MLOPS\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1298.0,
+        "min": 0.0,
+        "max": 1498.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1298.0,
+            "min": 0.0,
+            "max": 1498.0
+        }
+    ],
+    "disk": {
+        "total": 475.8451957702637,
+        "used": 209.26324081420898
+    },
+    "memory": {
+        "total": 7.6853179931640625
+    }
+}
