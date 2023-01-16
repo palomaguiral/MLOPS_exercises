@@ -1,0 +1,42 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-01-16T10:03:06.682902",
+    "startedAt": "2023-01-16T10:03:04.892448",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\usuario\\MLOPS_exercises\\tests\\test_training.py",
+    "codePath": "tests\\test_training.py",
+    "git": {
+        "remote": "https://github.com/palomaguiral/MLOPS_exercises.git",
+        "commit": "e0bfd61ef11cc4a38cf6a74eb27d5f69f06fcce8"
+    },
+    "email": "pguiort@gmail.com",
+    "root": "C:/Users/usuario/MLOPS_exercises",
+    "host": "DESKTOP-LJ88EGP",
+    "username": "usuario",
+    "executable": "C:\\Users\\usuario\\anaconda3\\envs\\MLOPS\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1298.0,
+        "min": 0.0,
+        "max": 1498.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1298.0,
+            "min": 0.0,
+            "max": 1498.0
+        }
+    ],
+    "disk": {
+        "total": 475.8451957702637,
+        "used": 213.6420135498047
+    },
+    "memory": {
+        "total": 7.6853179931640625
+    }
+}

@@ -31,6 +31,7 @@ class MyAwesomeModel(LightningModule):
 
     def forward(self, x):
         # Pass the input tensor through each of our operations
+        x=x.view(x.shape[0], -1)
         x = self.hidden(x)
         x = self.sigmoid(x)
         x = self.output(x)
@@ -46,7 +47,7 @@ class MyAwesomeModel(LightningModule):
         self.log('train_loss', loss)
         self.log('train_acc', acc)
         # self.logger.experiment is the same as wandb.log
-        self.logger.experiment.log({'logits': wandb.Histrogram(preds)})
+        #self.logger.experiment.log({'logits': wandb.Histrogram(preds)})
         return loss
 
     def test_step(self, batch, batch_idx):   #NEW (for LightningModule )
@@ -66,8 +67,8 @@ class MyAwesomeModel(LightningModule):
 
 class mnist(Dataset):
     def __init__(self, train):
-        test_input_filepath = 'C:/Users/usuario/MLOPS/nuevo_repo/data/processed/test.npz'
-        train_input_filepath = 'C:/Users/usuario/MLOPS/nuevo_repo/data/processed/train_data.npz'
+        test_input_filepath = 'C:/Users/usuario/MLOPS_exercises/data/processed/test.npz'
+        train_input_filepath = 'C:/Users/usuario/MLOPS_exercises/data/processed/train_data.npz'
         if train:
             content = [ ]
             content.append(np.load(train_input_filepath, allow_pickle=True))
