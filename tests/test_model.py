@@ -1,9 +1,8 @@
 import sys
-
 sys.path.append("./src/models/")
 
 import torch
-from lighting_model import MyAwesomeModel
+from lightning_model import MyAwesomeModel
 
 
 # a
@@ -19,3 +18,6 @@ def test_model():
 
     #Check the size of the OUTPUT data
     assert y.shape == torch.Size([1, 10]), "Output size is not torch.Size([1,10])"
+
+
+test_model()
