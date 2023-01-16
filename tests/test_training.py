@@ -16,7 +16,6 @@ def test_training(): #Training created
     
     trainer = Trainer(
         max_epochs=2,
-        logger=pl.loggers.WandbLogger(project="dtu_mlops_light"),
         precision=16,
     )
     trainer.fit(model, train_dataloaders=train_data_loader) #fit the model
