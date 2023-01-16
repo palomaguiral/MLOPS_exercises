@@ -67,8 +67,8 @@ class MyAwesomeModel(LightningModule):
 
 class mnist(Dataset):
     def __init__(self, train):
-        test_input_filepath = 'C:/Users/usuario/MLOPS_exercises/data/processed/test.npz'
-        train_input_filepath = 'C:/Users/usuario/MLOPS_exercises/data/processed/train_data.npz'
+        test_input_filepath = 'data/processed/test.npz'
+        train_input_filepath = 'data/processed/train_data.npz'
         if train:
             content = [ ]
             content.append(np.load(train_input_filepath, allow_pickle=True))
